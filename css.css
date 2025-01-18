@@ -75,6 +75,9 @@ a {
 .section {
   min-height: 100vh;
 }
+#section1 {
+  margin-top: 50px;
+}
 .menu {
   background: var(--white-color);
   position: fixed;
