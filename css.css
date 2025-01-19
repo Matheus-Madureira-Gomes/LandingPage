@@ -67,7 +67,7 @@ a {
 }
 
 .main-content {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   padding: var(--gap);
 }
@@ -76,7 +76,7 @@ a {
   min-height: 100vh;
 }
 #section1 {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 .menu {
   background: var(--white-color);
@@ -85,7 +85,7 @@ a {
   left: 0;
   right: 0;
   width: 100%;
-  border-bottom: lightgray 1px solid;
+  border-bottom: lightgray 0.1rem solid;
 }
 .menu h1 {
   font-size: 2.3rem;
