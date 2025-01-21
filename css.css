@@ -124,3 +124,30 @@ a {
 .menu ul li a:hover::after {
   width: 50%;
 }
+.intro-content{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  height: 100vh;
+}
+.intro-text-content{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin-bottom: 9rem;
+}
+.intro-text-content h2{
+  margin-bottom: 4rem;
+  font-size: 7rem;
+}
+.intro-text-content p {
+  font-size: 2rem;
+}
+.intro-img img{
+  height: 80rem;
+  width: 80rem;
+}
+.intro-img{
+  display: flex;
+  justify-content: center;
+}
