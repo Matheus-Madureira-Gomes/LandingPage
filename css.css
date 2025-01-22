@@ -144,8 +144,8 @@ a {
   font-size: 2rem;
 }
 .intro-img img{
-  height: 80rem;
-  width: 80rem;
+  min-height: 80rem;
+  min-width: 80rem;
 }
 .intro-img{
   display: flex;
