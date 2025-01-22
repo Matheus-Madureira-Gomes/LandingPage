@@ -126,14 +126,15 @@ a {
 }
 .intro-content{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr; 
   gap: 10rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 .intro-text-content{
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   margin-bottom: 9rem;
 }
 .intro-text-content h2{
@@ -145,7 +146,7 @@ a {
 }
 .intro-img img{
   min-height: 80rem;
-  min-width: 80rem;
+  max-width: 80rem;
 }
 .intro-img{
   display: flex;
@@ -155,8 +156,8 @@ a {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  height: 100vh;
-  width: 50rem;
+  min-height: 100vh;
+  max-width: 50rem;
   text-align: center;
 }
 .page-two p, .page-two h1{
@@ -165,14 +166,15 @@ a {
 .grid-content{
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 30rem;
-  flex-flow: column wrap;   
+  flex-direction: column;
+  flex-wrap: nowrap;  
 }
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15rem;
+  gap: 4rem;
   margin-top: 10rem;
   counter-reset: grid-counter;
 }
@@ -194,4 +196,18 @@ a {
   font-size: 7rem;
   border-radius: 1rem 0.5rem;
   box-shadow: 0.5rem 0.2rem 1rem black;
+}
+.grid-two-img img{
+  width: 36rem;
+  height: 36rem;
+  transition: all 300ms ease-in-out;
+}
+.grid-two-img img:hover{
+  transform: translate(-3%, 3%) rotate(2deg) scale(1.1);
+}
+.grid-two-img{
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
 }
