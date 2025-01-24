@@ -62,6 +62,11 @@ a {
   background-position: center center;
   color: var(--white-color);
 }
+.contact-bg{
+  background-image: url(imgs/vanishing-stripes.svg);
+  background-size: cover;
+  background-position: center center;
+}
 
 .white-bg {
   background: var(--white-color);
