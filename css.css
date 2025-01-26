@@ -1,6 +1,7 @@
 :root {
   --primary-color: #0A1128;
   --white-color: #FFFFFF;
+  --secondary-color: crimson;
   --gap: 3rem;
 }
 
@@ -300,5 +301,5 @@ body .full-width {
   color: var(--primary-color);
 }
 .form-group ::placeholder {
-  color: var(--light-gray-color);
+  color: lightgray;
 }
