@@ -212,7 +212,6 @@ a {
 .responsive-table {
   overflow: hidden;
   overflow-x: auto;
-  margin-left: 4rem;
 }
 table caption{
   font-style: italic;
@@ -296,4 +295,10 @@ body .full-width {
 }
 .form-group ::placeholder {
   color: lightgray;
+}
+@media (max-width: 850px){
+  .intro-content, .grid{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
