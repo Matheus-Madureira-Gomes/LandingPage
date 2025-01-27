@@ -77,9 +77,7 @@ a {
 .section {
   min-height: 100vh;
 }
-#section1 {
-  margin-top: 5rem;
-}
+
 .menu {
   background: var(--white-color);
   position: fixed;
@@ -130,7 +128,7 @@ a {
 .intro-content{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
   gap: var(--gap);
   min-height: 100vh;
 }
@@ -138,7 +136,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .intro-text-content h2{
   margin-bottom: 4rem;
@@ -146,10 +144,6 @@ a {
 }
 .intro-text-content p {
   font-size: 2rem;
-}
-.intro-img, .intro-img svg{
-  max-width: 100%;
-  height: auto;
 }
 .page-two {
   display: flex;
@@ -296,9 +290,66 @@ body .full-width {
 .form-group ::placeholder {
   color: lightgray;
 }
-@media (max-width: 850px){
+.close-menu{
+  display: none;
+}
+.back-to-top{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: darkgray;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+@media (max-width: 800px){
   .intro-content, .grid{
     grid-template-columns: 1fr;
     justify-items: center;
+  }
+  .intro-img{
+    width: 80%;
+  }
+  .menu-content, .menu-content ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-content{
+    height: 100vh;
+  }
+  .menu-content h1{
+    margin-bottom: 5rem;
+  }
+  .menu{
+    display: none;
+  }
+  .close-menu{
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+  }
+  .close-menu-label::after{
+    content: '≡';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: #FFFFFF;
+    line-height: 3rem;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 4rem 4rem;
+    cursor: pointer;
+  }
+  .close-menu:checked~.menu{
+    display: block;
   }
 }

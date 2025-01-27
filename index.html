@@ -9,17 +9,19 @@
 </head>
 
 <body>
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="Close menu"></label>
   <aside class="menu">
     <div class="main-content menu-content">
-    <h1><a href="#section1">LOGO</a></h1>
+    <h1><a onclick="getElementById('close-menu').checked = false" href="#section1">LOGO</a></h1>
     <nav>
-      <ul>
-        <li><a href="#section2">top 3</a></li>
-        <li><a href="#section3">grid one</a></li>
-        <li><a href="#section4">gallery</a></li>
-        <li><a href="#section5">grid two</a></li>
-        <li><a href="#section6">pricing</a></li>
-        <li><a href="#section7">contact</a></li>
+      <ul onclick="getElementById('close-menu').checked = false">
+        <li><a href="#section2">Top 3</a></li>
+        <li><a href="#section3">Grid one</a></li>
+        <li><a href="#section4">Gallery</a></li>
+        <li><a href="#section5">Grid two</a></li>
+        <li><a href="#section6">Pricing</a></li>
+        <li><a href="#section7">Contact</a></li>
       </ul>
     </nav>  
   </div>
@@ -206,7 +208,7 @@
           </div>
 
           <div class="form-group">
-            <label for="last-name">last name</label>
+            <label for="last-name">Last name</label>
             <input type="text" name="last-name" id="last-name" placeholder="Your last name">
           </div>
 
@@ -228,6 +230,7 @@
    </div>
   </section>
 
+    <a class="back-to-top" href="#section1">↑</a>
 </body>
 
 </html>
